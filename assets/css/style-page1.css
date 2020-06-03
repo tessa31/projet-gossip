@@ -83,3 +83,8 @@
   transform: scale(1.025);
 }
 
+.link-personnage{
+  text-decoration: none;
+  color: white;
+}
+
