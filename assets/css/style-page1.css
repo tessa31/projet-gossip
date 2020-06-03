@@ -1,0 +1,85 @@
+
+/* .gossip-synopsis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.gossip-text {
+  height: 420px;
+  width: 900px;
+  border-radius: 15px;
+  position: center;
+}*/
+
+.resume{
+  margin: 20px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding-top: 20px;
+} 
+
+.container-up{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+
+.container-right{
+  height: 450px;
+  width: 700px;
+}
+
+.container-left{
+  background-image: url('https://fanart.tv/fanart/tv/80547/seasonposter/gossip-girl-54bd4f7ecbf37.jpg');
+  height: 450px;
+  width: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-xoxo{
+  height: 100px;
+  width: 120px;
+}
+
+.container-xoxo{
+  display: flex;
+  justify-content: center;
+}
+
+.title-js {
+  padding-top: 17%;
+  max-width: 80%;
+  margin-left:40%;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: black;
+ }
+
+ .button{
+  align-self: center;
+  padding: 20px 100px 18px 100px;
+  color: white;
+  font-family: arial;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgb(255, 85, 85);
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover{
+ background: #b8163e;
+}
+
+.button:active{
+  transform: scale(1.025);
+}
+

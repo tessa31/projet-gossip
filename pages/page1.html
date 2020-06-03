@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Synopsis</title>
+
+    <link rel="stylesheet" href="../assets/css/style-page1.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav role='navigation'>
+            <ul>
+                <li><a href="#">Synopsis</a></li>
+                <li><a href="../pages/page2.html">Personnages</a></li>
+                <!-- <li id="heart-trigger" class="heart heart-trigger"><span class="fa fa-heart"></span></li> -->
+                <li id="heart-trigger" class="heart heart-trigger"><a href="../index.html"><img class="fa fa-heart"
+                            src="../assets/img/vrai-logo.png" alt="logo menu"></a></li>
+                </li>
+                <li><a href="../pages/page3.html">Bande annonce</a></li>
+                <li><a href="../pages/page4.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <h2>Synopsis</h2> -->
+    <div class="title-js">
+        <span class="text"></span><span class="cursor">|</span>
+    </div>
+
+
+
+    <div class="container-up">
+        <div class="container-left">
+        </div>
+        <div class="container-right container-text">
+            <p class="resume">
+                La série Gossip girl met en avant la vie de la jeunesse new-yorkaise. Mensonges, jalousies, potins,
+                coups bas, secrets et trahisons font partie du quotidien de ces jeunes new-yorkais pour le plus grand
+                régal de la célèbre blogueuse "gossip girl" et de ses lecteurs.<br><br>
+
+                Gossip girl est une mystérieuse blogueuse qui partage, chaque jour, tous les scoops qu’on lui envoie,
+                afin que tout soit révélé au grand jour.<br>
+                Elle publie quotidiennement de nouveaux scoops croustillants à souhait pour son plus grand plaisir, mais
+                aussi pour celui de ses fans.<br><br>
+
+                Gossip girl a, néanmoins, ses cibles préférées : la magnifique Sérena Van Der Woodsen, mais aussi Blair
+                Waldorf, Dan Humfrey, Chuck Bass et également Nate Archibald.
+                <div class="button">Voir les personnages</div>
+            </p>
+            <div class="container-xoxo">
+                <img class="logo-xoxo"
+                    src="https://image.spreadshirtmedia.com/image-server/v1/mp/designs/1012053685,width=178,height=178,version=1572212132/xoxo-gossip-girl.png">
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Start Footer bottom Area -->
+<footer>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-icons">
+                <ul>
+                    <li>
+                      <a href="https://www.facebook.com/tessa.vicente.9">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/tessa-vicente-7407b2170/">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/tessavcnt/">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    <li>
+                      <a href="https://www.youtube.com/channel/UCHyWVoEPYyPkmq3e_SjCk2A?view_as=subscriber">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="credits">
+              <a class="link-footer" href="#">Privacy Policy</a> | <a class="link-footer" href="#">Terms & Condition</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        /* ECRITURE TITRE*/
+
+        const spnText = document.querySelector('.text');
+        const spnCursor = document.querySelector('.cursor');
+        const txt = ["Synopsis "];
+
+        let activeLetter = 0;
+        let activeWord = 0;
+
+        const addLetterSpeed = 200;
+        const removeLetterSpeed = 50;
+        const firstWordDelay = 1500;
+        const nextWordDelay = 2000;
+        const cursorAnimationTime = 400;
+
+        let isFirstWord = true;
+        let lastWord = false;
+
+        const removeLetter = () => {
+            if (lastWord) return;
+            spnText.textContent = spnText.textContent.substring(0, spnText.textContent.length - 1);
+            activeLetter--;
+            if (activeLetter <= 0) {
+                return setTimeout(() => {
+                    activeWord++;
+                    if (activeWord === txt.length - 1) {
+                        lastWord = true;
+                    };
+                    addLetter();
+                }, nextWordDelay);
+            }
+            setTimeout(removeLetterSpeed);
+        }
+
+        const addLetter = () => {
+            if (isFirstWord) {
+                return setTimeout(() => {
+                    isFirstWord = false;
+                    addLetter();
+                }, firstWordDelay);
+            }
+
+            spnText.textContent += txt[activeWord][activeLetter];
+
+            activeLetter++;
+
+            if (activeLetter === txt[activeWord].length) {
+                if (lastWord) {
+                    return;
+                };
+                return setTimeout(() => {
+                    removeLetter();
+                }, nextWordDelay);
+            }
+
+            setTimeout(addLetter, addLetterSpeed);
+        }
+
+        addLetter();
+
+        const cursorAnimation = () => {
+            spnCursor.classList.toggle('active');
+        }
+        setInterval(cursorAnimation, cursorAnimationTime);
+    </script>
+
+
+</body>
+
+</html>

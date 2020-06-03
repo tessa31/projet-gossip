@@ -1,0 +1,49 @@
+/*PHOTO TESSA*/
+
+
+/*text paragraphe*/
+.para {
+    margin: 20px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.container-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+  }
+  
+  .container-right{
+    height: 20%;
+    width: 700px;
+  }
+  
+  .container-left{
+    background: url('https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-0/p280x280/102835529_3073134462709807_7335260987118845952_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_oc=AQmroLPcO0Kw175fQ-XWFz5L40DGYvaIgUR3JVUsf3mpyRSisQa2TS1MrpY4z8LSCwvoy2y6BLnt44NbvEyPUKp7&_nc_ht=scontent-cdt1-1.xx&_nc_tp=6&oh=114a0ac7208d9be9e779cdff128f7860&oe=5EFD76C4');
+    height: 450px;
+    width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .logo-xoxo{
+    height: 100px;
+    width: 120px;
+  }
+  
+  .container-xoxo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-js {
+    padding-top: 17%;
+    max-width: 80%;
+    margin-left:40%;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: black;
+   }

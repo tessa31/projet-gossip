@@ -1,0 +1,372 @@
+body {
+  background: #F6F5F0;
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: #4a4860; */
+  background: black;
+  z-index: 10000;
+  border-bottom: 4px solid #4a4860;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  display: none;
+}
+img{
+  width: 100px;
+  height: 80px;
+}
+nav ul a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.7em;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  transition: background 0.25s, box-shadow 0.15s;
+}
+nav ul a:hover {
+  color: #b8163e;
+  cursor: pointer;
+}
+
+
+.heart {
+  display: none;
+  margin: 0 auto;
+  padding: 12px 30px;
+}
+.heart-trigger {
+  display: block;
+  order: -1;
+  padding: 12px 30px;
+}
+
+.visible {
+  display: block;
+  transform: scale(1);
+}
+.fa-heart:hover {
+  cursor:pointer;
+  color: #b8163e;
+}
+
+h1{
+  color: black;
+  padding-top: 15%;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+h2 {
+  color: black;
+  padding-top: 13%;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+
+
+
+.container-up-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 15%;
+}
+
+.container-down-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 6%;
+}
+
+.card-img{
+  height:400px;
+  width: 280px;
+}
+
+.container1{
+  background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/83528413_249320666175786_7247596830546984960_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_oc=AQnhJ5PSovy9N6cuMlP4zcdquzOyuZFBBRGot0oOkcmrCLyKRJNmIY9NVvYF_Co0jNISa_Kz07nxXzFvI6l0iqGa&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=fdaf7261e592a75ff5f43ddd2ebaf9d5&oe=5EFDE820');
+}
+.container2{
+  background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/102873754_292603842111642_272057049733398528_n.jpg?_nc_cat=104&_nc_sid=b96e70&_nc_oc=AQnX1G0slbkgMVJW8flC5eVc1kTBtwy6nQTVjKdN3iL3tY_04NPNpvSCfr9e2tJq544MUxeVlp6Os45geCDrqhm7&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=e75ce45bf6f9f9c4f4f7124b78cbc029&oe=5EFBC80B') ;
+}
+
+.container3{
+  background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/102433141_543296223007935_8634146706172149760_n.jpg?_nc_cat=102&_nc_sid=b96e70&_nc_oc=AQmDSnU3Wg4QnOmD9ZlW5mDxAIQ552Z0cRHjw6-1chpN7kKoasiEpQoGeSMYqNr1Qa6r23uGiE5_bOUNmn2Dhv54&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=947081bb0feb4211ec874bdbadb4d49b&oe=5EFE7AE7') ;
+}
+
+.container4{
+  background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/101021130_190836512138311_1329338617729908736_n.jpg?_nc_cat=104&_nc_sid=b96e70&_nc_oc=AQnJ_swzApIEOFUPUCKsrqRziILD1zb1OIcXFx1wqvOxbXSCVQFDmwp8d63hP9xxDKrB4GlAaZKlF7dx8XcqampP&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=9494cb183705db8775a41ff5f7cc4139&oe=5EFC0B26');
+}
+
+.container5{
+  background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/102571863_425224118360690_753078814061363200_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_oc=AQnaHc8bLWVk23cZiNiVtmZdM61D8HMdlJIoe3l8bDCIirIzKVOiQ0eqYrSJELSasYcH39R0yy1_QFUI7vbEIX4Z&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=352376ae8bca978cf7daac0721ebc3b1&oe=5EFD3863');
+}
+
+.container6{
+  background-image: url('https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-0/p280x280/83284803_625851438008526_7477451377011064832_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_oc=AQmYarH2ihTADn6BylU1gbEMY9YaUb7rPfX8GYtdZ413qOvZmff5wNqcq1mzdOwY2-lq-uYGCapURrP6oJ4BMdF4&_nc_ht=scontent-cdt1-1.xx&_nc_tp=6&oh=8491d0652257efb2dd114e5f1492b397&oe=5EFF23CC');
+}
+
+.title-js-home {
+  padding-top: 6%;
+  max-width: 80%;
+  margin-left:40%;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: black;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*autres pages*/
+.rose-or{
+  height: 100px;
+  width: 120px;
+}
+
+ .cursor {
+  opacity: 0;
+  transition: .2s;
+ }
+
+
+ .cursor.active {
+  opacity: 1;
+ }
+
+
+
+
+
+/*-------------FOOTER-------------------*/
+/*------- Footer Area Start -----------*/
+.footer-icons ul li {
+  display: inline-block;
+}
+
+.footer-icons ul li a {
+  border: 1px solid white;
+  color: white;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 5px;
+  text-align: center;
+  width: 40px;
+  border-radius: 50%;
+}
+.footer-icons {
+  text-align: center;
+}
+
+.footer-contacts p span {
+  color: #3EC1D5;
+  font-weight: 700;
+}
+
+.popular-tag ul li {
+  display: inline-block;
+}
+
+.footer-content {
+  display: block;
+  overflow: hidden;
+}
+
+.popular-tag ul li a:hover, 
+.footer-icons ul li a:hover {
+  background: #b8163e;
+  border: 1px solid #b8163e;
+  color: #fff;
+}
+
+.popular-tag ul li a {
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 3px;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.4s ease 0s;
+  width: 70px;
+  text-align: center;
+}
+
+.footer-area-bottom {
+  background: black;
+  padding: 15px 0;
+}
+
+.copyright-text a:hover {
+  text-decoration: underline;
+  color: #b8163e;
+}
+
+.copyright-text a {
+  color: white;
+}
+
+.copyright> p {
+  margin-bottom: 0;
+  color: white;
+}
+
+.credits {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.credits a {
+  color: white;
+}
+
+.credits a:hover{
+  color: #b8163e;
+}
+
+.fa{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 545px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+}
+
+
+
+@media all and (min-width: 545px) {
+  nav ul li {
+    display: block;
+ }
+}
+
+
+
+@media all and (min-width: 545px) {
+  nav ul a {
+    padding: 20px;
+ }
+}
+
+
+
+
+@media all and (min-width: 545px) {
+  .heart {
+    display: block;
+    margin: initial;
+ }
+}
+
+
+
+
+@media all and (min-width: 545px) {
+  .heart-trigger {
+    order: initial;
+ }
+}
+
+
+

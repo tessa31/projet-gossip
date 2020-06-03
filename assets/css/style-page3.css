@@ -1,0 +1,45 @@
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+
+.gossip-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bande-annonce{
+    width: 75%;
+    height: 60vh;
+    padding-top: 4%;
+}
+
+.link-netflix{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.lien{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-left: 3.5px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.title-js {
+    padding-top: 17%;
+    max-width: 80%;
+    margin-left:40%;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: black;
+   }

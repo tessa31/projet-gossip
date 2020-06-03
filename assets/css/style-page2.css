@@ -1,0 +1,42 @@
+.title-perso {
+    color: white;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 0 20px black;
+    width: 80%;
+    max-width: 500px;
+    margin: 60px;
+    color: black;
+    text-align: center;
+}
+
+.profile-body{
+    margin:30px
+}
+
+.profile-image {
+    height: 260px;
+    width: 35%;
+    padding-top: 30px;
+}
+
+.profile-name{
+    padding-top: 0;
+}
+
+.title-js {
+    padding-top: 17%;
+    max-width: 80%;
+    margin-left:40%;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: black;
+   }
